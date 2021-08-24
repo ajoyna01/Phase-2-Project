@@ -23,17 +23,17 @@ function PlantCard( {eachPlant} ){
         {eachPlant.name}
       </div>
       <div className="plant water">  
-        <h4> {eachPlant.water}</h4>
+        <h4> Water: {eachPlant.water}</h4>
        </div> 
       <div className="plant light">  
-        <h4> {eachPlant.light}</h4>
+        <h4>Light: ☀️ {eachPlant.light}</h4>
        </div> 
       <div className="plant description">
         <h3> {eachPlant.description}</h3>
       </div>  
     </div>
       <div className="plant description">
-        <h3> {eachPlant.likes}</h3>
+        <h3> ❤️ {eachPlant.likes}</h3>
       </div>  
           <button
             className="favorites"

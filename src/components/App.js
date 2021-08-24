@@ -1,8 +1,15 @@
 
-// import PlantsPage from './PlantsPage';
+import PlantsPage from './PlantsPage';
+
+import Favorites from './Favorites';
+
 import React from 'react';
-// import Favorites from './Favorites';
-import Routes from './Routes'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 
 
@@ -18,12 +25,8 @@ function App() {
 
   
   return (<>
- 
-  {/* <Header/> */}
-  <Routes/>
-  {/* <PlantsPage />
-  <Favorites/> */}
-
+  <PlantsPage />
+  <Favorites /> 
 
     
     </>);
