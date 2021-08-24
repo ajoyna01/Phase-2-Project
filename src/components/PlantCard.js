@@ -1,20 +1,19 @@
 import React from "react";
 
 function PlantCard( {eachPlant} ){
-  console.log("Plant Card", eachPlant)
+  //console.log("Plant Card", eachPlant)
 
 
 
-
-
-  return(<>  - Plant Card -    
+return(<>  - Plant Card -    
   <div className="main plant card div">
-  <div
-    className="plant card"
-    key={eachPlant.id}
-    onClick={()=> 
+    <div
+      className="plant card"
+      key={eachPlant.id}
+      onClick={()=> 
       console.log("add event listener")
-    }>
+    }
+    >
     <div className="image">
       <img src={eachPlant.img} alt="don't kill me" />
     </div>
