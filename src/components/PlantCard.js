@@ -1,7 +1,7 @@
 import React from "react";
 
-function PlantCard(plants){
-  console.log("Plant Card", plants)
+function PlantCard( {eachPlant} ){
+  console.log("Plant Card", eachPlant)
 
 
 
@@ -11,35 +11,37 @@ function PlantCard(plants){
   <div className="main plant card div">
   <div
     className="plant card"
-    key={plants.id}
+    key={eachPlant.id}
     onClick={()=> 
       console.log("add event listener")
     }>
     <div className="image">
-      <img alt="don't kill me" src={plants.image_url} />
+      <img src={eachPlant.img} alt="don't kill me" />
     </div>
     <div className="plants specs">
       <div className=" plant name">
-        {plants.name}
-        
+        {eachPlant.name}
       </div>
       <div className="plant water">  
-        <h4> {plants.water}</h4>
+        <h4> {eachPlant.water}</h4>
        </div> 
       <div className="plant light">  
-        <h4> {plants.light}</h4>
+        <h4> {eachPlant.light}</h4>
        </div> 
       <div className="plant description">
-        <h3> {plants.description}</h3>
+        <h3> {eachPlant.description}</h3>
       </div>  
     </div>
+      <div className="plant description">
+        <h3> {eachPlant.likes}</h3>
+      </div>  
           <button
             className="favorites"
             onClick={() => 
               console.log("add event listener")
             }
           >
-            x
+            Favorite
           </button>
         
   </div>

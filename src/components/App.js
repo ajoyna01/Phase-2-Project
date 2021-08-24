@@ -1,6 +1,6 @@
 
 import PlantsPage from './PlantsPage';
-import React, { BrowserRouter, Route } from 'react-router-dom';
+import React from 'react';
 
 
 
@@ -15,13 +15,8 @@ function App() {
 
   
   return (<>
-
-    <BrowserRouter>
-      <Route path="/plants" component={<PlantsPage/>}>
-    <h1>Should see all the time </h1>
-      </Route>
+  <PlantsPage />
     
-    </BrowserRouter>
 
     
     </>);
