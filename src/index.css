@@ -5,9 +5,41 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgba(153, 205, 50, 0.322);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 6px;
+  overflow: hidden;
+  background-color:rgba(105, 172, 5, 0.493);
+  font-size: 25px;
+  color: black;
+  
+}
+
+h1{
+  text-transform: capitalize;
+  text-align: center;
+  font-size:60px;
+  color: darkgreen
+}
+
+a{
+  text-decoration: none;
+  padding: 20px;
+  color:whitesmoke;
+
+}
+
+a:hover{
+  color:green;
+}
+
+

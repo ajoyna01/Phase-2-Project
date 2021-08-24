@@ -1,15 +1,15 @@
 import React from 'react'
-import PlantCard from "./PlantCard"
+// import PlantCard from "./PlantCard"
 
 function Favorites() {
 
 
 
 
-    return (<>
+    return (<> I got your Favorites Here!
     
     
-    
+    {/* <PlantCard/> */}
     
     </>)
 }

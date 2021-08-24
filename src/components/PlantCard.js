@@ -7,7 +7,7 @@ function PlantCard( {eachPlant} ){
 
 
 
-  return(<>  - Plant Card -    
+  return(<>   
   <div className="main plant card div">
   <div
     className="plant card"
@@ -46,7 +46,7 @@ function PlantCard( {eachPlant} ){
         
   </div>
 </div>
-);
+
 
 
   </>)

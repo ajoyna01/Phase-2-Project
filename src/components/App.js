@@ -1,11 +1,9 @@
 
-import PlantsPage from './PlantsPage';
-<<<<<<< HEAD
-import React, { BrowserRouter, Route } from 'react-router-dom';
-import Favorites from './Favorites'
-=======
+// import PlantsPage from './PlantsPage';
 import React from 'react';
->>>>>>> de508adde4f40bc1d08f1041ee23f3b7c0a1d8bb
+// import Favorites from './Favorites';
+import Routes from './Routes'
+
 
 
 
@@ -20,8 +18,12 @@ function App() {
 
   
   return (<>
-  <PlantsPage />
-    
+ 
+  {/* <Header/> */}
+  <Routes/>
+  {/* <PlantsPage />
+  <Favorites/> */}
+
 
     
     </>);
