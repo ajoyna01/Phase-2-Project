@@ -13,21 +13,40 @@ const PlantsPage =()=>{
         console.log("State of our plants[ ", plants, " ]")
         
 
+<<<<<<< HEAD
 
         const fetchPlants=()=>{ console.log("In useEffect") 
 
             fetch('http://localhost:3000/plants')
             .then(response => response.json())
             .then(data => { console.log("From Our Fetch:  ", data) 
+=======
+useEffect(()=> {
+    fetch("http://localhost:3000/plants")
+    .then(response => response.json())
+    .then(fetchedPlants => {
+        console.log("From Fetch:", fetchedPlants)
+        
+        
+        
+        setPlants(fetchedPlants)
+    });
+}, [])
+    // const fetchPlants=()=>{ console.log("In useEffect") 
+
+    //         fetch('http://localhost:3000/plants')
+    //         .then(response => response.json())
+    //         .then(data => { console.log("From Our Fetch:  ", data) 
+>>>>>>> de508adde4f40bc1d08f1041ee23f3b7c0a1d8bb
             
-                setPlants(data)
+    //             setPlants(data)
             
-            });
+    //         });
 
-        }
+    //     }
 
 
-    useEffect( fetchPlants(), [] )
+    // useEffect( fetchPlants(), [] )
     
     
     return(<>
@@ -36,12 +55,14 @@ const PlantsPage =()=>{
         {
             plants.map(eachPlant =>{ console.log(eachPlant) 
             
-                return(<h4> <PlantCard key={eachPlant.name}/> </h4>)
+                return(<h4> <PlantCard key={eachPlant.id}
+                            eachPlant={eachPlant}
+                            /> </h4>)
 
             })
         }
         {/* {critters.map(eachCritter =>{ console.log(eachCritter) })} */}
-    
+     
     </>)
 
 

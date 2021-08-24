@@ -1,7 +1,11 @@
 
 import PlantsPage from './PlantsPage';
+<<<<<<< HEAD
 import React, { BrowserRouter, Route } from 'react-router-dom';
 import Favorites from './Favorites'
+=======
+import React from 'react';
+>>>>>>> de508adde4f40bc1d08f1041ee23f3b7c0a1d8bb
 
 
 
@@ -16,13 +20,8 @@ function App() {
 
   
   return (<>
-
-    <BrowserRouter>
-      <Route path="/plants" component={<PlantsPage/>}>
-    <h1>Should see all the time </h1>
-      </Route>
+  <PlantsPage />
     
-    </BrowserRouter>
 
     
     </>);
