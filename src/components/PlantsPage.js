@@ -13,7 +13,7 @@ const PlantsPage =()=>{
 
         const fetchPlants=()=>{ console.log("In useEffect") 
 
-            fetch('http://www.quantitative-plant.org/api?type=TYPE&field=FIELD&q=Q')
+            fetch('')
             .then(response => response.json())
             .then(data => { console.log("From Our Fetch:  ", data) 
             
