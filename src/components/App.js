@@ -1,6 +1,7 @@
 
 import PlantsPage from './PlantsPage';
 import React, { BrowserRouter, Route } from 'react-router-dom';
+import Favorites from './Favorites'
 
 
 

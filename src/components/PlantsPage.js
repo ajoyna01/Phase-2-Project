@@ -16,11 +16,7 @@ const PlantsPage =()=>{
 
         const fetchPlants=()=>{ console.log("In useEffect") 
 
-<<<<<<< HEAD
             fetch('http://localhost:3000/plants')
-=======
-            fetch('')
->>>>>>> 5a0afbbdb0cd30b568a432c51c03b669690e3c6a
             .then(response => response.json())
             .then(data => { console.log("From Our Fetch:  ", data) 
             
