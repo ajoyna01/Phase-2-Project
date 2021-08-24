@@ -1,0 +1,299 @@
+{
+  "plants": 
+  
+  [
+    {
+      "id": 1,
+      "name": "Aloe Vera",
+      "img": "https://www.houseplantsexpert.com/assets/images/aloe-vera-plant-1.jpg",
+      "water": "2",
+      "light": "bright, indirect",
+      "likes": 1
+    },
+    {
+      "id": 2,
+      "name": "Bird of Paradise",
+      "img": "https://www.houseplantsexpert.com/assets/images/Strelitzia_Reginae_Flower_img1.jpg",
+      "water": "3",
+      "light": "bright, indirect",
+      "likes": 4
+    },
+    {
+      "id": 3,
+      "name": "Cattleya Orchid",
+      "img": "https://www.houseplantsexpert.com/assets/images/yellow_cattleya_orchid.jpg",
+      "water": "1",
+      "light": "indirect",
+      "likes": 7
+
+    },
+  
+  {
+      "id": 4,
+      "name": "Eternal Flame",
+      "img": "https://www.houseplantsexpert.com/assets/images/calathea_crocata.jpg",
+      "water": "2",
+      "light": "indirect",
+      "likes": 2
+
+    },
+    {
+      "id": 5,
+      "name": "False Shamrock Plant",
+      "img": "https://www.houseplantsexpert.com/image-files/false_shamrock_leaf.jpg",
+      "water": "1",
+      "light": "low",
+      "likes": 2
+    },
+ 
+    {
+      "id": 6,
+      "name": "Flamingo Flower Plant",
+      "img": "https://www.houseplantsexpert.com/image-files/flamingo-flower-plant.jpg",
+      "water": "3",
+      "light": "indirect",
+      "likes": 7
+
+    },
+    {
+      "id": 7,
+      "name": "Flaming Sword Bromeliad",
+      "img": "https://www.houseplantsexpert.com/image-files/flaming-sword-plant.jpg",
+      "water": "2",
+      "light": "indirect",
+      "likes": 3
+
+    },
+    {
+      "id": 8,
+      "name": "Flowering Maple Plant",
+      "img": "https://www.houseplantsexpert.com/image-files/abutilon-hybridum.jpg",
+      "water": "3",
+      "light": "direct",
+      "likes": 2
+
+
+    },
+    {
+      "id": 9,
+      "name": "Kaffir Lily Plant",
+      "img": "https://www.houseplantsexpert.com/image-files/Clivia-Miniata.jpg",
+      "water": "3",
+      "light": "bright, indirect",
+      "likes": 7
+
+
+    },
+    {
+      "id": 10,
+      "name": "Lollipop Plant",
+      "img": "https://www.houseplantsexpert.com/image-files/pachystachys-lutea-flowers.jpg",
+      "water": "3",
+      "light": "bright, indirect",
+      "likes": 5
+
+
+    },
+    {
+      "id": 11,
+      "name": "Medusa's Head Plant",
+      "img": "https://www.houseplantsexpert.com/image-files/medusas-head-plant.jpg",
+      "water": "1",
+      "light": "indirect",
+      "likes": 3
+
+
+    },
+    {
+      "id": 12,
+      "name": "Moth Orchid",
+      "img": "https://www.houseplantsexpert.com/image-files/moth_orchid_white.jpg",
+      "water": "1",
+      "light": "bright, indirect",
+      "likes": 2
+
+
+    },
+    {
+      "id": 13,
+      "name": "Ornamental Pepper Plant",
+      "img": "https://www.houseplantsexpert.com/image-files/ornamental_pepper_plant.png",
+      "water": "3",
+      "light": "direct",
+      "likes": 4
+
+
+    },
+    {
+      "id": 14,
+      "name": "Peace Lily",
+      "img": "https://www.houseplantsexpert.com/assets/images/peace_lily_plant.JPG",
+      "water": "2",
+      "light": "indirect",
+      "likes": 1
+
+
+    },
+    {
+      "id": 15,
+      "name": "Poinsettia",
+      "img": "https://www.houseplantsexpert.com/image-files/Poinsettia-bract.jpg",
+      "water": "2",
+      "light": "bright, indirect",
+      "likes": 6
+
+    },
+    {
+      "id": 16,
+      "name": "Poison Primrose",
+      "img": "https://www.houseplantsexpert.com/images/primula_obconica_flowers.jpg",
+      "water": "3",
+      "light": "bright, indirect",
+      "likes": 3
+
+
+    },
+    {
+      "id": 17,
+      "name": "Queen's Tears",
+      "img": "https://www.houseplantsexpert.com/image-files/Billbergia-Nutans.jpg",
+      "water": "3",
+      "light": "low",
+      "likes": 2
+
+
+    },
+    {
+      "id": 18,
+      "name": "Rose of China",
+      "img": "https://www.houseplantsexpert.com/image-files/rose-of-china-flower.jpg",
+      "water": "2",
+      "light": "bright, indirect",
+      "likes": 2
+
+
+    },
+    {
+      "id": 19,
+      "name": "Scarlet Star Plant",
+      "img": "https://www.houseplantsexpert.com/image-files/scarlet-star-bromeliad.jpg",
+      "water": "1",
+      "light": "bright, indirect",
+      "likes": 0
+
+
+    },
+    {
+      "id": 20,
+      "name": "Slipper Orchid",
+      "img": "https://www.houseplantsexpert.com/assets/images/slipper_orchid.jpg",
+      "water": "2",
+      "light": "low",
+      "likes": 3
+
+
+    },
+    {
+      "id": 21,
+      "name": "Urn Plant",
+      "img": "https://www.houseplantsexpert.com/image-files/Aechmea-Fasciata.jpg",
+      "water": "1",
+      "light": "bright, indirect",
+      "likes": 7
+
+
+    },
+    {
+      "id": 22,
+      "name": "Winter Cherry",
+      "img": "https://www.houseplantsexpert.com/image-files/winter-cherry-plant.jpg",
+      "water": "2",
+      "light": "direct",
+      "likes": 4
+
+
+    },
+    {
+      "id": 23,
+      "name": "Argyroderma Teticulare",
+      "img": "https://www.houseplantsexpert.com/assets/images/argyroderma_testiculare.jpg",
+      "water": "1",
+      "light": "indirect",
+      "likes": 7
+
+
+    },
+    {
+      "id": 24,
+      "name": "Bunny Ear Cactus",
+      "img": "https://www.houseplantsexpert.com/image-files/Opuntia-microdasys.jpg",
+      "water": "2",
+      "light": "direct",
+      "likes": 2
+
+
+    },
+    {
+      "id": 25,
+      "name": "Century Plant",
+      "img": "https://www.houseplantsexpert.com/assets/images/agave_americana.jpg",
+      "water": "1",
+      "light": "direct",
+      "likes": 2
+
+
+    },
+    {
+      "id": 26,
+      "name": "Donkey's Tail",
+      "img": "https://www.houseplantsexpert.com/assets/images/donkeys_tail_sedum.jpg",
+      "water": "1",
+      "light": "direct",
+      "likes": 3
+
+
+    },
+    {
+      "id": 27,
+      "name": "Jade Plant",
+      "img": "https://www.houseplantsexpert.com/image-files/jade-plant.jpg",
+      "water": "1",
+      "light": "bright, indirect",
+      "likes": 4
+
+
+    },
+    {
+      "id": 28,
+      "name": "Mother-in-law's Tongue",
+      "img": "https://www.houseplantsexpert.com/image-files/mother-in-laws-tongue-plant.jpg",
+      "water": "1",
+      "light": "indirect",
+      "likes": 8
+
+
+    },
+    {
+      "id": 29,
+      "name": "Parallel Peperomia",
+      "img": "https://www.houseplantsexpert.com/assets/images/peperomia_puteolata.jpg",
+      "water": "2",
+      "light": "bright, indirect",
+      "likes": 4
+
+
+    },
+    {
+      "id": 30,
+      "name": "Zebra Howorthia",
+      "img": "https://www.houseplantsexpert.com/assets/images/peperomia_puteolata.jpg",
+      "water": "2",
+      "light": "direct",
+      "likes": 3
+
+
+    }
+    
+]
+}
+
