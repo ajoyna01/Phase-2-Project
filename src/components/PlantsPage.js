@@ -13,14 +13,6 @@ const PlantsPage =()=>{
         console.log("State of our plants[ ", plants, " ]")
         
 
-<<<<<<< HEAD
-
-        const fetchPlants=()=>{ console.log("In useEffect") 
-
-            fetch('http://localhost:3000/plants')
-            .then(response => response.json())
-            .then(data => { console.log("From Our Fetch:  ", data) 
-=======
 useEffect(()=> {
     fetch("http://localhost:3000/plants")
     .then(response => response.json())
@@ -37,7 +29,6 @@ useEffect(()=> {
     //         fetch('http://localhost:3000/plants')
     //         .then(response => response.json())
     //         .then(data => { console.log("From Our Fetch:  ", data) 
->>>>>>> de508adde4f40bc1d08f1041ee23f3b7c0a1d8bb
             
     //             setPlants(data)
             
