@@ -16,7 +16,7 @@ const Routes = () => {
     <Header/>
     <nav className="nav-links">
         <span><Link to= "/" > Home </Link></span>
-        <span><Link to='/TipsPage'> Tips </Link></span>
+        <span><Link to='/TipsPage'> Tips For Plant Success </Link></span>
         <span><Link to='/PlantsPage'> Plants </Link></span>
         <span><Link to='/Favorites'>   Plant Favorites   </Link></span>
     </nav>
@@ -26,8 +26,8 @@ const Routes = () => {
             <Route exact path='/PlantsPage' component={PlantsPage}/>
             <Route exact path='/Favorites' component={Favorites}/>
         </Switch>
-        <PlantsPage/>
-        
+        {/* <PlantsPage/> */}
+       
         
     </BrowserRouter>
 );

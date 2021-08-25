@@ -52,7 +52,7 @@ useEffect(()=> {
 
             })
         }
-        {/* {critters.map(eachCritter =>{ console.log(eachCritter) })} */}
+        
      
     </>)
 

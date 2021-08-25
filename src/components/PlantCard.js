@@ -8,7 +8,7 @@ function PlantCard( {eachPlant} ){
 
 
   return(<>   
-  <div className="main plant card div">
+  <div className="column">
   <div
     className="plant card"
     key={eachPlant.id}

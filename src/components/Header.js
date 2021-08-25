@@ -8,7 +8,7 @@ function Header () {
 
 return(<> 
    
-   <h1>How To Keep Your Plants Alive</h1> 
+   <h1>The Plant Doctor</h1> 
     {/* <Favorites/> */}
     {/* <PlantsPage/> */}
     </> )

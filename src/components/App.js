@@ -1,5 +1,6 @@
 
 import PlantsPage from './PlantsPage';
+import TipsPage from './TipsPage';
 
 import Favorites from './Favorites';
 
@@ -10,6 +11,8 @@ import {
   Route,
   Link
 } from "react-router-dom";
+
+import Routes from './Routes';
 
 
 
@@ -25,8 +28,11 @@ function App() {
 
   
   return (<>
-  <PlantsPage />
-  <Favorites /> 
+  {/* <PlantsPage />
+  <Favorites />  */}
+  <Routes />
+  
+  
 
     
     </>);

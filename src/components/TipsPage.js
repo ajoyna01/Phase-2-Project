@@ -11,9 +11,13 @@ const TipsPage =()=>{
       console.log("State of our Tips[ ", tips, " ]")
 
 
-
-
 useEffect(()=> {
+
+    const postRequest = {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ title: 'React Hooks POST Request Example' })
+    };
     fetch("http://localhost:3000/tips")
     .then(response => response.json())
     .then(fetchedTips=> {
@@ -25,22 +29,32 @@ useEffect(()=> {
     });
 }, [])
 
-return(<>
+const addNewTip = (newTip) =>{
+    setTips([...tips, newTip])
+}
+// console.log(tips)
+return(
+<>
+    ( <TipForm addNewTip={addNewTip}/> 
+        {/* tips.map(eachTip =>{ console.log(eachTip.tips)  */}
+                    {/* return(
+                        <span>{eachTip.name}
+                    {eachTip.tips}</span>) */}
+
+               
+                
+                    
+
+                    {/* // <TipForm eachTip={eachTip}/> */}
+                
+                {/* return(<h4> <TipForm newTip={addNewTip}/> </h4>) */}
+
+        )
     
-    <h2></h2>
-    {
-        tips.map(eachTip =>{ console.log(eachTip) 
-        
-            return(<h4> <TipForm key={eachTip.id}
-                        eachTip={eachTip}
-                        /> </h4>)
-
-        })
-    }
-    {/* {critters.map(eachCritter =>{ console.log(eachCritter) })} */}
+   {/* <TipForm /> */}
  
-</>)
-
+</>
+)
 
 }
 export default TipsPage;
