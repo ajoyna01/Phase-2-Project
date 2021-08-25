@@ -3,33 +3,35 @@ import {useState} from "react";
 function PlantCard( props ){
   console.log("Plant Card", props)
 
-  const [likedPlants, setLikedPlants] = useState([])
+  const [likedPlants, setLikedPlants] = useState(0)
     //console.log(likedPlants)
- 
-  const handleLikes=(plantToLikeAtDB)=> {
-   fetch(`https://localhost:3000/plants/${plantToLikeAtDB.id}`,
-   {  method: "PATCH",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(likedPlants)
-    })
-  let likedPlantsInFavorites=likedPlants.filter(eachLikedPlant=>
-    eachLikedPlant.id === plantToLikeAtDB)
+//  for the POST request for the tips form
+  // const handleTips=(tipsToPOSTAtDB)=> {
+  //  fetch(`https://localhost:3000/plants/${plantToLikeAtDB.id}`,
+  //  {  method: "POST",
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //     body: JSON.stringify(likedPlants)
+  //   })
+  // let likedPlantsInFavorites=likedPlants.filter(eachLikedPlant=>
+  //   eachLikedPlant.id === tipsToPOSTAtDB)
 
-    setLikedPlants([...likedPlantsInFavorites])
+  //   setLikedPlants([...likedPlantsInFavorites])
   
-  }
+  // }
+  
+  // for the like button
   const clickHandler =()=>{
     console.log(props.eachPlant.name, "clicked")
-    
+    setLikedPlants(likedPlants + 1);
   }
   
 return(<>   
   <div className="main plant card div">
     <div
       className="plant card"
-      key={props.id}
+      key={props.eachPlant.id}
     >
     <div className="image">
       <img src={props.eachPlant.img} alt="don't kill me" />
@@ -48,16 +50,23 @@ return(<>
         <h3> {props.eachPlant.description}</h3>
       </div>  
     </div>
-      <div className="plant description">
-        <h3> ❤️ {props.eachPlant.likes}</h3>
+      <div className="plant likes"
+            >
+        <button onClick={clickHandler}> ❤️ Likes {likedPlants}</button>
       </div>  
+      <br>
+      </br>
           <button
             className="favorites"
-            onClick={handleLikes}
+            // onClick={handleLikes}
           >
-            Favorite🍃
+            Favorite🍃 
           </button>
-        
+        <br>
+        </br>
+        <br>
+        </br>
+        <button>🌱Leave A Tip!🌱</button>
   </div>
 </div>
 

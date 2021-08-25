@@ -50,7 +50,7 @@ const addToFavoritesPage=(clickedPlant)=> {
             })
         }
         {
-            <Favorites plantsToMap={plants}
+            <Favorites plantsToMap={favePlants}
             addToFavoritesPage={addToFavoritesPage}
            
             />

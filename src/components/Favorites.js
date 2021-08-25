@@ -13,10 +13,15 @@ const plantWasFavorited = (clickedPlant) => {
 
 return (<div>
         <h2>🪴Your Windowsill☀️</h2>
-{/* {props.plantsToMap.map(eachPlant=> {console.log(eachPlant)
-        return( */}
- {/* <PlantCard handleClickedPlant={plantWasFavorited}/>
- )})  */}
+
+{
+    props.plantsToMap.map(eachPlant=> {
+        console.log(eachPlant)
+        return (<PlantCard eachPlant={eachPlant}/>)
+    })
+}
+ {/* <PlantCard eachPlant={props.plantsToMap[1]}/> */}
+ 
      
 
                                                                     {/* I've tried everything to get this to render */}
