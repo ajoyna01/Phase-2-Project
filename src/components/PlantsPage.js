@@ -42,7 +42,7 @@ useEffect(()=> {
     
     return(<>
     
-        <h2></h2>
+        <h2>FETCHING :)</h2>
         {
             plants.map(eachPlant =>{ console.log(eachPlant) 
             
@@ -52,7 +52,7 @@ useEffect(()=> {
 
             })
         }
-        
+        {/* {critters.map(eachCritter =>{ console.log(eachCritter) })} */}
      
     </>)
 

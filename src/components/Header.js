@@ -1,6 +1,5 @@
-import React from "react";
-// import Favorites from "./Favorites";
-// import PlantsPage from "./PlantsPage";
+//import React from "react";
+//import {NavLink} from "react-router-dom";
 
 function Header () {
 
@@ -13,7 +12,13 @@ return(<>
     {/* <PlantsPage/> */}
     </> )
 
-}
+
+
+   
+ 
+ 
+
+};
 
 
 export default Header; 
