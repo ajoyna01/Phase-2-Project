@@ -12,7 +12,7 @@ const plantWasFavorited = (clickedPlant) => {
 
 
 return (<div>
-        <h2>🪴Your Windowsill☀️</h2>
+        <h2>Your Windowsill☀️</h2>
 
 {
     props.plantsToMap.map(eachPlant=> {
