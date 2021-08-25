@@ -5,15 +5,18 @@ function Header () {
 
 
 
-return (
+return(<> 
+   
+   <h1>How To Keep Your Plants Alive</h1> 
+    {/* <Favorites/> */}
+    {/* <PlantsPage/> */}
+    </> )
 
 
 
-   <>
-    </>
-
+   
  
- )
+ 
 
 };
 
