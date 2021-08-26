@@ -6,6 +6,8 @@ function Home (){
 
     Welcome Home
 
+    {/* render a Featured Plant */}
+
     </>)
 }
 

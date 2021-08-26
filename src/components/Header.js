@@ -8,17 +8,9 @@ function Header () {
 return(<> 
    
    <h1>The Plant Doctor</h1> 
-    {/* <Favorites/> */}
-    {/* <PlantsPage/> */}
+   
     </> )
 
-
-
-   
- 
- 
-
 };
-
 
 export default Header; 

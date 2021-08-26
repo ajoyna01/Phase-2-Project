@@ -1,7 +1,6 @@
 import React , { useEffect, useState } from 'react'
 import PlantCard from './PlantCard';
-
-
+import Favorites from './Favorites';
 
 
 const PlantsPage =()=>{
@@ -9,11 +8,13 @@ const PlantsPage =()=>{
     //   console.log(json)
 
 
-    const [plants, setPlants] = useState([])
+const [plants, setPlants] = useState([])
         console.log("State of our plants[ ", plants, " ]")
-        
+       
+const [favePlants, setFavePlants] = useState([])
+    console.log("State of our favorites[ ", favePlants, " ]")
 
-useEffect(()=> {
+    useEffect(()=> {
     fetch("http://localhost:3000/plants")
     .then(response => response.json())
     .then(fetchedPlants => {
@@ -24,35 +25,51 @@ useEffect(()=> {
         setPlants(fetchedPlants)
     });
 }, [])
-    // const fetchPlants=()=>{ console.log("In useEffect") 
+  
+const addPlantToFavorites=(clickedPlant)=>{
+    let duplicatePlant = favePlants.find( eachLikedPlant=>
+        eachLikedPlant.id === clickedPlant.id)
 
-    //         fetch('http://localhost:3000/plants')
-    //         .then(response => response.json())
-    //         .then(data => { console.log("From Our Fetch:  ", data) 
-            
-    //             setPlants(data)
-            
-    //         });
+    if(!duplicatePlant){
+        setFavePlants( [...favePlants, clickedPlant])
+    }
+}
 
-    //     }
-
-
-    // useEffect( fetchPlants(), [] )
+const removePlantFromFavorites=(clickedOffPlant)=>{
     
-    
+    let removedPlantFromFaves = favePlants.filter (eachLikedPlant=>
+        eachLikedPlant.id !== clickedOffPlant.id)
+        setFavePlants([...removedPlantFromFaves])
+}
     return(<>
     
-        <h2>FETCHING :)</h2>
+        <h2>PLANTS</h2>
         {
-            plants.map(eachPlant =>{ console.log(eachPlant) 
+            plants.map(eachPlant =>{ //console.log(eachPlant) 
             
                 return(<h4> <PlantCard key={eachPlant.id}
                             eachPlant={eachPlant}
+                            addPlantToFavorites={addPlantToFavorites}
+                            removePlantFromFavorites={removePlantFromFavorites}
                             /> </h4>)
 
             })
         }
-        {/* {critters.map(eachCritter =>{ console.log(eachCritter) })} */}
+    
+     {
+            favePlants.map(eachPlant=> {
+              console.log(eachPlant)
+           return(
+           <Favorites 
+            plants={plants}
+            />)   
+        })
+        
+    }
+
+
+
+
      
     </>)
 

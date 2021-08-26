@@ -33,28 +33,19 @@ const addNewTip = (newTip) =>{
     setTips([...tips, newTip])
 }
 // console.log(tips)
-return(
-<>
-    ( <TipForm addNewTip={addNewTip}/> 
-        {/* tips.map(eachTip =>{ console.log(eachTip.tips)  */}
-                    {/* return(
-                        <span>{eachTip.name}
-                    {eachTip.tips}</span>) */}
+return(<>
 
-               
-                
-                    
+    <TipForm addNewTip={addNewTip}/> 
+       {tips.map(eachTip =>{ console.log(eachTip.tips)
+           return(
+                       <span>{eachTip.name}
+                   {eachTip.tips}</span>)}
+       )};
 
-                    {/* // <TipForm eachTip={eachTip}/> */}
-                
-                {/* return(<h4> <TipForm newTip={addNewTip}/> </h4>) */}
-
-        )
-    
-   {/* <TipForm /> */}
- 
-</>
-)
+              
+           
+</>  )
 
 }
+
 export default TipsPage;

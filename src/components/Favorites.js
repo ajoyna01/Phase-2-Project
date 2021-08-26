@@ -1,35 +1,20 @@
 import React from 'react'
-import PlantCard from "./PlantCard"
-import PlantsPage from './PlantsPage'
+
 
 function Favorites(props) {
-    console.log(props.plantsToMap)
+    console.log(props)
 
-const plantWasFavorited = (clickedPlant) => {
-    console.log("From PlantCard:", clickedPlant)
-   props.addToFavoritesPage(clickedPlant)
+const plantWasClicked=(clickedOnePlant)=>{
+    console.log("from <plantcard/> to faves", clickedOnePlant)
+    props.removePlantFromFavorites(clickedOnePlant)
 }
 
-
-return (<div>
-        <h2>Your Windowsill☀️</h2>
-
-{
-    props.plantsToMap.map(eachPlant=> {
-        console.log(eachPlant)
-        return (<PlantCard eachPlant={eachPlant}/>)
-    })
-}
- {/* <PlantCard eachPlant={props.plantsToMap[1]}/> */}
- 
-     
-
-                                                                    {/* I've tried everything to get this to render */}
-  
-    
-    </div>)
+return (
+<div>
+    <h2>Your Windowsill☀️</h2>
+{/* Here is where we need to use props to pass in the liked plants */}
+</div>
+)
 } 
-
-
 
 export default Favorites;
