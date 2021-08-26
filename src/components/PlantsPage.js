@@ -1,7 +1,7 @@
 import React , { useEffect, useState } from 'react'
 import PlantCard from './PlantCard';
 import Favorites from './Favorites';
-
+import { BrowserRouter, Route } from 'react-router-dom';
 
 const PlantsPage =()=>{
       console.log("In PlantsPage")
@@ -56,18 +56,19 @@ const removePlantFromFavorites=(clickedOffPlant)=>{
             })
         }
     
-     {
+     {/* {
             favePlants.map(eachPlant=> {
               console.log(eachPlant)
            return(
            <Favorites 
-            plants={plants}
+            plants={eachPlant}
             />)   
         })
         
-    }
-
-
+    } */}
+    {/* <BrowserRouter>
+        <Route  path='/PlantsPage/Favorites' component={Favorites}/>
+    </BrowserRouter> */}
 
 
      
