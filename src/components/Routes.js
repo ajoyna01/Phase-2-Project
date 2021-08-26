@@ -18,7 +18,7 @@ const Routes = () => {
         <span><Link to= "/" > Home </Link></span>
         <span><Link to='/TipsPage'> Tips For Plant Success </Link></span>
         <span><Link to='/PlantsPage'> Plants </Link></span>
-        <span><Link to='Favorites'>   Plant Favorites   </Link></span>
+        <span><Link to='/Favorites'>   Plant Favorites   </Link></span>
     </nav>
         <Switch>
             <Route exact path='/' component={Home}/>
