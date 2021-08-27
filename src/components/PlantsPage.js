@@ -6,9 +6,8 @@ import { light } from '@material-ui/core/styles/createPalette';
 import { useHistory } from 'react-router';
 
 const PlantsPage =()=>{
-      console.log("In PlantsPage")
-    //   console.log(json)
-
+    //console.log("In PlantsPage")
+    
 
     const [plants, setPlants] = useState([]);
             console.log("State of our plants[ ", plants, " ]")
@@ -27,68 +26,38 @@ const PlantsPage =()=>{
             setPlants(fetchedPlants)
                      });
         }, [])
-    const history = useHistory();
+const history = useHistory();
 
-// const addPlantToFavorites=(clickedPlant)=>{
-//     let duplicatePlant = favePlants.find( eachLikedPlant=>
-//         eachLikedPlant.id === clickedPlant.id)
-// console.log(clickedPlant)
-//     if(!duplicatePlant){
-//         setFavePlants( [...favePlants, clickedPlant])
-//     }
-// }
-// const favoritedPlantClickHandler= () => {
-//     console.log(props.eachPlant)
-//     props.addPlantToFavorites(props.eachPlant)
+/////// this function is not being read at all. A click event is happening but the logic is not read
+//const favoritedPlantClickHandler=()=>{
+  //console.log()
+
   
-const favoritedPlantClickHandler=()=>{
-  
-    let addPlantToFavorites=(clickedPlant)=>{
-        let duplicatePlant = favePlants.find( eachLikedPlant=>
-            eachLikedPlant.id === clickedPlant.id)
-        if(!duplicatePlant){
-            setFavePlants( [...favePlants])
-            console.log(favePlants)
-        }
-    }
-
-
-    //addPlantToFavorites(duplicatePlant)
-
-    fetch("http://localhost:3000/likedPlants", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(addPlantToFavorites)
-      })
-        .then((r) => r.json())
-        .then((newFavePlants) => { addPlantToFavorites(newFavePlants);
-        console.log(newFavePlants)
+const addPlantToFavorites=(clickedPlant)=>{
+        console.log(clickedPlant)//clicked plant is being read and assigned an id of whatever is next in db.json
         
-        // const addPlantToFavorites = (newFave) =>{
-        //         let duplicatePlant = favePlants.find( eachLikedPlant=>
-        //                     eachLikedPlant.id === newFave.id)
-                    
-        //                 if(!duplicatePlant){
-        //                     setFavePlants( [...favePlants, newFave])
-        //                 }
-                       
-                
-        //        }
-                console.log(addPlantToFavorites)
-          
-          
-                history.push("/Favorites");
-   
-   
-   
-        });
-    
-
-}
-
-
+    let duplicatePlant = favePlants.find( eachLikedPlant=>  //duplicatePlant=undefined
+            eachLikedPlant.id === clickedPlant.id)
+            //console.log(eachLikedPlant)
+        
+            if(!duplicatePlant){
+            
+           // setFavePlants( [...favePlants, clickedPlant] )
+            console.log(clickedPlant)
+            let objectToPost=clickedPlant
+       
+            fetch("http://localhost:3000/likedPlants", {
+                method: "POST",
+                headers: {
+                "Content-Type": "application/json",
+                },
+                body: JSON.stringify(objectToPost)
+            })
+                .then((r) => r.json())
+                .then((newFavePlants) => { ;
+                console.log(newFavePlants)
+                });
+} }
 
     return(<>
     
@@ -98,7 +67,7 @@ const favoritedPlantClickHandler=()=>{
             
                 return(<h4> <PlantCard key={eachPlant.id}
                             eachPlant={eachPlant}
-                            favoritedPlantClickHandler={favoritedPlantClickHandler}
+                            addPlantToFavorites={addPlantToFavorites}
                             //removePlantFromFavorites={removePlantFromFavorites}
                             /> </h4>)
 

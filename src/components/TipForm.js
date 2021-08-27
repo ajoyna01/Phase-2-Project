@@ -48,16 +48,22 @@ let thisTipForm =
     
   
    
-return (
-    <form onSubmit={handleSubmit} className="new-tip-form">
-      <div>Any Advice For Plant Owners??</div>
-      <input onChange={changeName} value={name}vplaceholder="Name" />
-      <div></div>
-      <input onChange={changeContent} value={tips} placeholder="Leave a Tip..." />
-      <div></div>
-      <input type="submit" value="Leave a Tip" />
-    </form>
+return (<>
+  <form onSubmit={handleSubmit} className="new-tip-form">
+    <div className="form-title"> Any Advice For Plant Parents??</div>
+    <br></br>
+    <input onChange={changeName} value={name} placeholder="Name..." />
+   
+    <div>
+      <br></br>
+    </div>
+    <input onChange={changeContent} value={tips} placeholder="Leave a Tip..." />
+    <div></div>
+    <br></br>
+    <input type="submit" value="🌿 Leave a Tip 🌿" />
+  </form>
+  <h2>Plant Parent Tips!</h2>
 
-)}
+</>)}
 
 export default TipForm;

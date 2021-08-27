@@ -12,17 +12,10 @@ function Favorites() {
     .then(response => response.json())
     .then(fetchedPlants => {
         console.log("From Fetch:", fetchedPlants)
-        
-        
-        
+    
         setFavePlants(fetchedPlants)
     });
 }, [])
-
-    // const addNewFavorite = (newFavePlant) =>{
-    // setFavePlants([...favePlants, newFavePlant])
-    // }
-    // console.log(favePlants)
 
 return (
 <div>
@@ -54,8 +47,6 @@ return (
                 </div>
 
             </div>
-            
-            
             </>
         )
         

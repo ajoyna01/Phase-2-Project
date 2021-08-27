@@ -14,7 +14,7 @@
       "name": "Bird of Paradise",
       "img": "https://www.houseplantsexpert.com/assets/images/Strelitzia_Reginae_Flower_img1.jpg",
       "water": "💧💧💧",
-      "description": "Flowering, ornamental, easy to grow",
+      "description": "Flowering, easy to grow",
       "light": "🌤",
       "likes": 4
     },
@@ -23,7 +23,7 @@
       "name": "Cattleya Orchid",
       "img": "https://www.houseplantsexpert.com/assets/images/yellow_cattleya_orchid.jpg",
       "water": "💧",
-      "description": "Flowering, ornamental, challenging to grow",
+      "description": "Flowering, challenging to grow",
       "light": "🌥",
       "likes": 7
     },
@@ -32,52 +32,52 @@
       "name": "Eternal Flame",
       "img": "https://www.houseplantsexpert.com/assets/images/calathea_crocata.jpg",
       "water": "💧💧",
-      "description": "Flowering, ornamental, moderately easy to grow",
+      "description": "Flowering, moderately easy to grow",
       "light": "🌥",
       "likes": 2
     },
     {
       "id": 5,
-      "name": "False Shamrock Plant",
+      "name": "False Shamrock",
       "img": "https://www.houseplantsexpert.com/image-files/false_shamrock_leaf.jpg",
       "water": "💧",
-      "description": "Flowering, ornamental, moderately easy to grow",
+      "description": "Flowering, moderately easy to grow",
       "light": "☁️",
       "likes": 2
     },
     {
       "id": 6,
-      "name": "Flamingo Flower Plant",
+      "name": "Flamingo Flower",
       "img": "https://www.houseplantsexpert.com/image-files/flamingo-flower-plant.jpg",
       "water": "💧💧💧",
-      "description": "Flowering, ornamental, challenging to grow",
+      "description": "Flowering, challenging to grow",
       "light": "🌥",
       "likes": 7
     },
     {
       "id": 7,
-      "name": "Flaming Sword Bromeliad",
+      "name": "Flaming Sword",
       "img": "https://www.houseplantsexpert.com/image-files/flaming-sword-plant.jpg",
       "water": "💧💧",
-      "description": "Flowering, ornamental, moderately easy to grow",
+      "description": "Flowering, moderately easy to grow",
       "light": "🌥",
       "likes": 3
     },
     {
       "id": 8,
-      "name": "Flowering Maple Plant",
+      "name": "Flowering Maple",
       "img": "https://www.houseplantsexpert.com/image-files/abutilon-hybridum.jpg",
       "water": "💧💧💧",
-      "description": "Flowering, ornamental, moderately easy to grow",
+      "description": "Flowering, moderately easy to grow",
       "light": "☀️",
       "likes": 2
     },
     {
       "id": 9,
-      "name": "Kaffir Lily Plant",
+      "name": "Kaffir Lily ",
       "img": "https://www.houseplantsexpert.com/image-files/Clivia-Miniata.jpg",
       "water": "💧💧💧",
-      "description": "Flowering, ornamental, moderately easy to grow ",
+      "description": "Flowering, moderately easy to grow ",
       "light": "🌤",
       "likes": 7
     },
@@ -86,13 +86,13 @@
       "name": "Lollipop Plant",
       "img": "https://www.houseplantsexpert.com/image-files/pachystachys-lutea-flowers.jpg",
       "water": "💧💧💧",
-      "description": "Flowering, ornamental, moderately easy to grow ",
+      "description": "Flowering, moderately easy to grow ",
       "light": "🌤",
       "likes": 5
     },
     {
       "id": 11,
-      "name": "Medusa's Head Plant",
+      "name": "Medusa's Head",
       "img": "https://www.houseplantsexpert.com/image-files/medusas-head-plant.jpg",
       "water": "💧",
       "description": "Flowering, air plant, moderately easy to grow",
@@ -104,16 +104,16 @@
       "name": "Moth Orchid",
       "img": "https://www.houseplantsexpert.com/image-files/moth_orchid_white.jpg",
       "water": "💧",
-      "description": "Flowering, ornamental, challenging to grow",
+      "description": "Flowering, challenging to grow",
       "light": "🌤",
       "likes": 2
     },
     {
       "id": 13,
-      "name": "Ornamental Pepper Plant",
+      "name": "Ornamental Pepper",
       "img": "https://www.houseplantsexpert.com/image-files/ornamental_pepper_plant.png",
       "water": "💧💧💧",
-      "description": "Flowering, ornamental, moderately easy to grow",
+      "description": "Flowering, moderately easy to grow",
       "light": "☀️",
       "likes": 4
     },
@@ -122,7 +122,7 @@
       "name": "Peace Lily",
       "img": "https://www.houseplantsexpert.com/assets/images/peace_lily_plant.JPG",
       "water": "💧💧",
-      "description": "Flowering, ornamental, moderately easy to grow",
+      "description": "Flowering, moderately easy to grow",
       "light": "🌥",
       "likes": 1
     },
@@ -131,7 +131,7 @@
       "name": "Poinsettia",
       "img": "https://www.houseplantsexpert.com/image-files/Poinsettia-bract.jpg",
       "water": "💧💧",
-      "description": "Flowering, ornamental, challenging to grow ",
+      "description": "Flowering, challenging to grow ",
       "light": "🌤",
       "likes": 6
     },
@@ -140,7 +140,7 @@
       "name": "Poison Primrose",
       "img": "https://www.houseplantsexpert.com/images/primula_obconica_flowers.jpg",
       "water": "💧💧💧",
-      "description": "Flowering, ornamental, moderately easy to grow",
+      "description": "Flowering, moderately easy to grow",
       "light": "🌤",
       "likes": 3
     },
@@ -149,7 +149,7 @@
       "name": "Queen's Tears",
       "img": "https://www.houseplantsexpert.com/image-files/Billbergia-Nutans.jpg",
       "water": "💧💧💧",
-      "description": "Flowering, ornamental, easy to grow",
+      "description": "Flowering, easy to grow",
       "light": "☁️",
       "likes": 2
     },
@@ -158,16 +158,16 @@
       "name": "Rose of China",
       "img": "https://www.houseplantsexpert.com/image-files/rose-of-china-flower.jpg",
       "water": "💧💧",
-      "description": "Flowering, ornamental, easy to grow",
+      "description": "Flowering, easy to grow",
       "light": "🌤",
       "likes": 2
     },
     {
       "id": 19,
-      "name": "Scarlet Star Plant",
+      "name": "Scarlet Star",
       "img": "https://www.houseplantsexpert.com/image-files/scarlet-star-bromeliad.jpg",
       "water": "💧",
-      "description": "Flowering, ornamental, challenging to grow",
+      "description": "Flowering, challenging to grow",
       "light": "🌤",
       "likes": 0
     },
@@ -176,7 +176,7 @@
       "name": "Slipper Orchid",
       "img": "https://www.houseplantsexpert.com/assets/images/slipper_orchid.jpg",
       "water": "💧💧",
-      "description": "Flowering, ornamental, easy to grow",
+      "description": "Flowering, easy to grow",
       "light": "☁️",
       "likes": 3
     },
@@ -185,7 +185,7 @@
       "name": "Urn Plant",
       "img": "https://www.houseplantsexpert.com/image-files/Aechmea-Fasciata.jpg",
       "water": "💧",
-      "description": "Flowering, ornamental, moderately easy to grow",
+      "description": "Flowering, moderately easy to grow",
       "light": "🌤",
       "likes": 7
     },
@@ -194,16 +194,16 @@
       "name": "Winter Cherry",
       "img": "https://thumbs.dreamstime.com/b/potted-solanum-capsicastrum-6513975.jpg",
       "water": "💧💧",
-      "description": "Flowering, ornamental, moderately easy to grow",
+      "description": "Flowering, moderately easy to grow",
       "light": "☀️",
       "likes": 4
     },
     {
       "id": 23,
-      "name": "Argyroderma Teticulare",
+      "name": "Argyroderma",
       "img": "https://www.houseplantsexpert.com/assets/images/argyroderma_testiculare.jpg",
       "water": "💧",
-      "description": "Succulent, ornamental, moderately easy to grow",
+      "description": "Succulent, moderately easy to grow",
       "light": "🌥",
       "likes": 7
     },
@@ -212,7 +212,7 @@
       "name": "Bunny Ear Cactus",
       "img": "https://www.houseplantsexpert.com/image-files/Opuntia-microdasys.jpg",
       "water": "💧💧",
-      "description": "Cactus, ornamental, moderately easy to grow",
+      "description": "Cactus, moderately easy to grow",
       "light": "☀️",
       "likes": 2
     },
@@ -221,7 +221,7 @@
       "name": "Century Plant",
       "img": "https://www.houseplantsexpert.com/assets/images/agave_americana.jpg",
       "water": "💧",
-      "description": "Cactus, ornamental, easy to grow",
+      "description": "Cactus, easy to grow",
       "light": "☀️",
       "likes": 2
     },
@@ -230,7 +230,7 @@
       "name": "Donkey's Tail",
       "img": "https://www.houseplantsexpert.com/assets/images/donkeys_tail_sedum.jpg",
       "water": "💧",
-      "description": "Succulent, ornamental, easy to grow",
+      "description": "Succulent, easy to grow",
       "light": "☀️",
       "likes": 3
     },
@@ -239,7 +239,7 @@
       "name": "Jade Plant",
       "img": "https://www.houseplantsexpert.com/image-files/jade-plant.jpg",
       "water": "💧",
-      "description": "Succulent, ornamental, easy to grow",
+      "description": "Succulent, easy to grow",
       "light": "🌤",
       "likes": 4
     },
@@ -248,7 +248,7 @@
       "name": "Mother-in-law's Tongue",
       "img": "https://www.houseplantsexpert.com/image-files/mother-in-laws-tongue-plant.jpg",
       "water": "💧",
-      "description": " ",
+      "description": "Flowering, easy to grow",
       "light": "🌥",
       "likes": 8
     },
@@ -257,7 +257,7 @@
       "name": "Parallel Peperomia",
       "img": "https://www.houseplantsexpert.com/assets/images/peperomia_puteolata.jpg",
       "water": "💧💧",
-      "description": "Succulent, ornamental, easy to grow",
+      "description": "Succulent, easy to grow",
       "light": "🌤",
       "likes": 4
     },
@@ -266,7 +266,7 @@
       "name": "Zebra Howorthia",
       "img": "https://www.houseplantsexpert.com/assets/images/peperomia_puteolata.jpg",
       "water": "💧💧",
-      "description": "Succulent, ornamental, moderately easy to grow ",
+      "description": "Succulent, moderately easy to grow ",
       "light": "☀️",
       "likes": 3
     }
@@ -278,9 +278,14 @@
       "tips": "I love this plant. I ignore mine and it loves it! Sometimes I forget to water it for two weeks and it's fine."
     },
     {
-      "name": "a;lkdfaldkf",
-      "tips": "asdfasdf",
+      "name": "Jenny Ortega",
+      "tips": "I've killed 23/25 of my plants! My advice stick to succulents!",
       "id": 2
+    },
+    {
+      "name": "",
+      "tips": "",
+      "id": 3
     }
   ],
   "likedPlants": [
@@ -294,13 +299,13 @@
       "likes": 1
     },
     {
-      "id": 2
-    },
-    {
-      "id": 3
-    },
-    {
-      "id": 4
+      "id": 3,
+      "name": "Cattleya Orchid",
+      "img": "https://www.houseplantsexpert.com/assets/images/yellow_cattleya_orchid.jpg",
+      "water": "💧",
+      "description": "Flowering, challenging to grow",
+      "light": "🌥",
+      "likes": 7
     }
   ]
 }

@@ -7,10 +7,3 @@ body {
  }
 
 
-.card-columns {
-
-display: inline-block;{  column-break-inside: avoid}
-
-@include media-breakpoint-only(lg) {
-    column-count: 3;
-  }

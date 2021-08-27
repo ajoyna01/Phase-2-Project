@@ -8,7 +8,7 @@ const TipsPage =()=>{
 
 
   const [tips, setTips] = useState([]);
-      console.log("State of our Tips[ ", tips, " ]")
+      console.log("State of our Tips[  tips ]")
 
  
 

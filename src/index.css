@@ -15,26 +15,53 @@ code {
 
 nav {
   list-style-type: none;
-  margin: 0;
+  margin: 2px;
   padding: 6px;
   overflow: hidden;
-  background-color:rgba(105, 172, 5, 0.493);
+  background-color:rgba(27, 226, 87, 0.493);
   font-size: 25px;
-  color: black;
+  color: white;
+  font-family:Georgia, 'Times New Roman', Times, serif
+
   
 }
 
 h1{
   text-transform: capitalize;
   text-align: center;
-  font-size:60px;
-  color: darkgreen
+  font-size: 100px;
+  color: rgb(14, 66, 14);
+  text-shadow: 1px 1px #171a17;
+  font-family:Georgia, 'Times New Roman', Times, serif
+
+
+  
 }
+
+h2{
+  font-size: 100px;
+  text-align: center;
+  color: darkgreen;
+  text-shadow: darkslategray;
+  text-transform: capitalize;
+  text-shadow: 1px 1px #505a4669;
+  font-family:Georgia, 'Times New Roman', Times, serif
+
+  
+}
+
+/* h4{
+  font-size: 25px;
+} */
 
 a{
   text-decoration: none;
-  padding: 20px;
-  color:whitesmoke;
+  padding: 10px;
+  color:rgb(181, 218, 193);
+  font-size: 20px;
+  font-family:Georgia, 'Times New Roman', Times, serif
+
+  
 
 }
 
@@ -42,21 +69,95 @@ a:hover{
   color:green;
 }
 
-.column {
+
+.card-deck{
+  /* max-width: fit-content; */
+  border-width: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
   float: left;
-  width: 33.33%;
+  min-height: 600px;
+  max-height: 700px;
+ min-width: 170px;
+ text-shadow: 1px 1px #94c5946b;
+ font-family:Georgia, 'Times New Roman', Times, serif;
+ margin-left: 10%;
+
+
+
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+body{
+  background-image: "https://giphy.com/embed/1iLVjz6PbgRuOOxa";
+}
+.card{
+  border-color: lawngreen;
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
+  .pic{
+   
+      /* float: left; */
+      width:  250px;
+      height: 200px;
+      object-fit: contain;
+      /* align-content: normal; */
+      border-radius: 5px;
+      border: 2px solid rgb(221, 221, 221);
+      /* border-radius: 2px; */
+      padding: 10px;
+      
   }
+  
+button.plant-likes
+{
+  float: right;
+}
+
+.plant-description
+{
+  font-size: medium;
+}
+.plant-name{
+  font-size: x-large;
+
+  
+}
+
+
+
+.home-pic
+{
+  display: block;
+  margin: auto;
+  
+}
+
+h1 {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9caf;
+  color: white;
+  font-size: 30px;
+}
+  
+  
+.new-tip-form{
+  margin-top: 8%;
+  padding: 30px;
+  text-align: left;
+  background: #1abca683;
+  color: white;
+  font-size: 15px;
+  margin-left: 15%;
+  margin-right: 40%;
+  margin-bottom: 5%
+  
+}
+
+.form-title{
+  font-size: 30px;
+  color: white;
+  text-shadow: 1px 1px #94c594b6;
 }
