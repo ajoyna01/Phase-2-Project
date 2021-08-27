@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useHistory } from 'react-router';
 
 
 
@@ -8,8 +9,6 @@ const TipForm =(props)=> {
     const [tips, setContent] = useState("");
 
 
-   
-
     const changeName=(event)=>{
         setName(event.target.value)
         console.log(event.target.value)
@@ -18,56 +17,47 @@ const TipForm =(props)=> {
     const changeContent=(event)=>{ 
         setContent(event.target.value)
         console.log(event.target.value)
-
-        // console.log(thisTipForm)
-
-    // tips.thisTipForm()   
-       
-       
-    // console.log( "My Tips", props)
-    // tips.addNewTip={thisTipForm}
-
-  
-
-    //   console.log(thisTipForm)
-    
-    //    props.addNewTip={thisTipForm}
-        //   return (thisTipForm)
     } 
-         
-    const handleSubmit=(event)=>{
-            event.preventDefault(console.log("what's popping"))
+
+const history = useHistory();
+
+const handleSubmit=(event)=>{
+        event.preventDefault(console.log("what's popping"))
+        
+let thisTipForm = 
+    {
+          name: name,
+          tips: tips,
+    };
     
-            let thisTipForm = 
-     
-            {
-              name: name,
-              tips: tips,
-            };
-            props.addNewTip(thisTipForm)
-            
-    }
+    props.addNewTip(thisTipForm)
+
+   fetch("http://localhost:3000/tips", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(thisTipForm),
+    })
+      .then((r) => r.json())
+      .then((newForm) => {props.addNewTip(newForm);
+
+        history.push("/TipsPage");
+ });
+} 
+    
+  
    
 return (
     <form onSubmit={handleSubmit} className="new-tip-form">
       <div>Any Advice For Plant Owners??</div>
-      <input onChange={changeName} placeholder="Name" />
+      <input onChange={changeName} value={name}vplaceholder="Name" />
       <div></div>
-      <input onChange={changeContent} placeholder="Leave a Tip..." />
+      <input onChange={changeContent} value={tips} placeholder="Leave a Tip..." />
       <div></div>
       <input type="submit" value="Leave a Tip" />
     </form>
 
-    // <FormControl>
-    //     <form onSubmit={handleSubmit} className="new-tip-form"></form>
-    //     <InputLabel htmlFor="my-input">Tip</InputLabel>
-    //     <Input onChange={changeContent} id="content-inout" aria-describedby="my-helper-text" />
-    //     <FormHelperText id="my-helper-text">Share Some Plant Advice</FormHelperText>
-    //     {/* <Input onChange={changeName} id="my-input" aria-describedby="my-helper-text" />
-    //     <FormHelperText id="my-helper-text">Leave Your Name</FormHelperText> */}
-    //     <input type="submit" value="Leave a Tip" />
-    // </FormControl>
-//   );
 )}
 
 export default TipForm;
